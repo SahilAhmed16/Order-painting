@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height:59px;
+}
+
+#logo{
+    margin: 24px 45px;
+}
+#logo img{
+    height: 66px;
+    margin: -19px -10px;
+}
+
+
+#navbar ul{
+    position: relative;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    background-color: darkblue;
+    position: absolute;
+    height: 98px;
+    width: 100%;
+    z-index: -1;
+    opacity: 2.9;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai',cursive;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+/* HOME section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 331px;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background:url(../img/bgd.png)no-repeat center center/cover;
+    height: 337px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    width: 1052px;
+}
+/* Services Section */
+#services{
+    margin:4px;
+    display: flex;
+
+}
+#services .box{
+border: 2px solid rgb(30, 123, 153);
+padding: 34px;
+margin: 6px;    
+border-radius: 23px;
+background-color: #ceebf5;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+    }
+
+
+/* utility classes */
+.h-primary{
+    font-family: cursive;
+    font-size: 2rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: cursive;
+    font-size: 1.3rem;
+    padding: 12px;
+}
+.btn{
+  padding: 5px 45px;
+  border: 2px solid white;
+  background-color: rgb(51, 147, 212);
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  margin: 22px;
+  cursor: pointer;
+    
+}
+.btn:hover {
+    background: darkblue;
+    color: white;
+  }
+.center{
+    text-align: center;
+    font-family: initial;
+}
+

@@ -1,0 +1,93 @@
+/* Navigation */
+
+#navbar{
+flex-direction: column;
+}
+#navbar::before {
+    content: "";
+    background-color: darkblue;
+    position: absolute;
+    height: 101px;
+    width: 100%;
+    z-index: -1;
+    opacity: 2.9;
+  }
+#navbar ul li {
+    list-style: none;
+    font-size: 0.6rem;
+  }
+  #navbar ul li a {
+    display: block;
+    padding: 0px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+  }
+  
+/* home */
+#head {
+  color: black;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+#home{
+    height: 266px;
+    padding:3px 68px;
+    padding: 3px 68px;
+}
+#home::before{
+    height: 270px;
+}
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+    font-family: sans-serif;
+    width: 368px;
+  }
+/* service */
+
+#service{
+    flex-direction: column;
+}
+#services .box {
+    border: 1px solid rgb(30, 123, 153);
+    padding: 1px;
+    margin: 5px;
+    border-radius: 28px;
+    background-color: #ceebf5;
+  }
+  #services .box img {
+    height: 58px;
+    display: block;
+    margin: auto;
+  }
+
+/* utility classes */
+.h-primary {
+    font-size: 17px;
+    padding: 3px;
+  }
+  .h-secondary {
+    font-family: cursive;
+    font-size: 0rem;
+    padding: 3px;
+  }
+  .center {
+    text-align: center;
+    font-family: initial;
+    font-size: 0.7rem;
+  }
+  /* button */
+  .btn {
+    padding: 4px 3px;
+    border: 2px solid white;
+    background-color: rgb(51, 147, 212);
+    color: white;
+    font-size: initial;
+    border-radius: 10px;
+    margin: 22px;
+    cursor: pointer;
+  }

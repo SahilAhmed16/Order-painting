@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+:root{
+    --navbar-height:59px;
+}
+body{
+    background-color: rgb(205, 222, 227);
+}
+
+#logo{
+    margin: 6px 45px;
+}
+#logo img{
+    height: 53px;
+    margin: -2px -10px;
+}
+
+#navbar ul{
+    position: relative;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    background-color: darkblue;
+    position: absolute;
+    height: 64px;
+    width: 100%;
+    z-index: -1;
+    opacity: 2.9;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai',cursive;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+/* .container{
+    color: black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 15pt;
+    font-weight: lighter;
+} */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+.container .gallery{
+width: 50%;
+padding-bottom: 50px;
+}
+.container .gallery h3{
+    font-size: 2.5em;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 3px solid gray;
+}
+.container .gallery h3 span{
+    font-weight: 100;
+}
+
+.container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+.container .box .dream img{
+    display: flex;
+    width: 435px;
+    padding-bottom: 6px;
+    border-radius: 5px;
+}
+.container .btn{
+    margin: 40px 0 70px 0;
+    background: black;
+    padding: 15px 40px;
+    border-radius: 5px;
+}
+.container .btn a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+@media only screen and (max-width:769px) {
+    .container .box{
+        flex-direction: column;
+    }
+    .container .box .dream{
+        width: 200%;
+    }
+    #navbar{
+        flex-direction: column;
+        }
+        #navbar::before {
+            content: "";
+            background-color: darkblue;
+            position: absolute;
+            height: 101px;
+            width: 100%;
+            z-index: -1;
+            opacity: 2.9;
+          }
+        #navbar ul li {
+            list-style: none;
+            font-size: 0.6rem;
+          }
+          #navbar ul li a {
+            display: block;
+            padding: 0px 10px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: white;
+          }
+          .container .gallery h3 {
+            font-size: 20px;
+            font-weight: bold;
+            padding-bottom: 0px;
+            border-bottom: 3px solid gray;
+          }
+          .container .gallery {
+            width: 56%;
+            padding-bottom: 8px;
+          }
+          
+}

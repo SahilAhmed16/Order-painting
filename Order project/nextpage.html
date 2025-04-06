@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="CSS/nextpage.css">
+</head>
+<body>
+    <div class="cart-container">
+        <h2>Order Summary</h2>
+        <div id="orderSummary">Loading...</div>
+        <h3>Total: <span id="finalTotal"></span></h3>
+        <button id="pbtn" onclick="proceedToPayment()">Proceed to Payment</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const orderSummary = document.getElementById('orderSummary');
+            const finalTotal = document.getElementById('finalTotal');
+
+            // Retrieve data from localStorage
+            const selectedItems = JSON.parse(localStorage.getItem('selectedItems'));
+            const totalPrice = localStorage.getItem('totalPrice');
+
+            if (selectedItems) {
+                let itemsHtml = '';
+                for (const key in selectedItems) {
+                    itemsHtml += `<div class="content"><div class="item">${selectedItems[key]}</div></div>`;
+                }
+                orderSummary.innerHTML = itemsHtml;
+                finalTotal.textContent = totalPrice;
+            } else {
+                orderSummary.innerHTML = 'No items selected.';
+            }
+        });
+
+        function proceedToPayment() {
+            if(confirm('Redirecting to payment...')){
+                window.location.href = 'payment.html';
+            }
+        }
+    </script>
+</body>
+</html>

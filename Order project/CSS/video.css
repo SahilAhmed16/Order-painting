@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navbar-height: 59px;
+}
+
+body {
+    background-color: rgb(227, 205, 205);
+}
+
+#logo {
+    margin: 6px 45px;
+}
+
+#logo img {
+    height: 53px;
+    margin: -2px -10px;
+}
+
+#navbar ul {
+    position: relative;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navbar::before {
+    content: "";
+    background-color: darkblue;
+    position: absolute;
+    height: 64px;
+    width: 100%;
+    z-index: -1;
+    opacity: 2.9;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul li a:hover {
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+#head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    font-family: cursive;
+    font-weight: bold;
+}
+
+#videos {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 10px;
+}
+
+.ytlogo {
+    margin: 24px 45px;
+}
+
+.ytlogo img {
+    height: 66px;
+    margin: -19px -10px;
+}

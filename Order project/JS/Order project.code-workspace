@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Downloads/add to cart/add to cart/image"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Order project"
+	}
+}
